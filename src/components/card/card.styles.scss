@@ -1,0 +1,88 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: auto;
+    margin: 1rem 0;
+    padding-top: 2.75rem;
+    border-radius: 1rem;
+    color: var(--pale-blue);
+    
+    &.work {
+        background-color: var(--light-orange);
+    }
+
+    &.play {
+        background-color: var(--soft-blue);
+    }
+
+    &.study {
+        background-color: var(--light-red);
+    }
+
+    &.exercise {
+        background-color: var(--lime-green);
+    }
+    
+    &.social {
+        background-color: var(--violet);
+    }
+
+    &.self-care{
+        background-color: var(--soft-orange);
+    }
+
+    .card-text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1.5rem;
+        background-color: var(--dark-blue);
+        border-radius: 1rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--dark-blue-hover);
+        }
+
+        .top-row-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            padding-bottom: .5rem;
+            
+            .type-text {
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+
+            svg {
+                cursor: pointer;
+
+                path:hover {
+                    fill: white;
+                }
+            }
+
+        }
+        
+        .bottom-row-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            .hours-text {
+                color: white;
+                font-size: 1.75rem;
+                font-weight: 300;
+            }
+
+            .last-week-text {
+                font-size: .85rem;
+            }
+        }
+    }
+}

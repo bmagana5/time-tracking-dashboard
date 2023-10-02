@@ -1,13 +1,38 @@
 .card-container {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
     min-height: auto;
     margin: 1rem 0;
-    padding-top: 2.75rem;
+    padding-top: 2.5rem;
     border-radius: 1rem;
     color: var(--pale-blue);
+
+    @media only screen and (min-width: 481px) {
+        width: 30%;
+        height: 48%;
+        margin: 0;
+
+        &:nth-child(2),
+        &:nth-child(5) {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+            margin-bottom: .5rem;
+        }
+
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6) {
+            margin-top: .5rem;
+        }
+    }
     
     &.work {
         background-color: var(--light-orange);
@@ -38,10 +63,15 @@
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
+        height: 100%;
         padding: 1.5rem;
         background-color: var(--dark-blue);
         border-radius: 1rem;
         cursor: pointer;
+
+        @media only screen and (min-width: 481px) {
+            justify-content: flex-start;
+        }
 
         &:hover {
             background-color: var(--dark-blue-hover);
@@ -57,6 +87,9 @@
             .type-text {
                 font-size: 1.2rem;
                 font-weight: 500;
+                @media only screen and (min-width: 481px) {
+                    font-size: .85rem;
+                }
             }
 
             svg {
@@ -74,14 +107,29 @@
             justify-content: space-between;
             align-items: center;
             
+            @media only screen and (min-width: 481px) {
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                height: 60%;
+                margin-top: .5rem;
+            }
+
             .hours-text {
                 color: white;
                 font-size: 1.75rem;
                 font-weight: 300;
+                @media only screen and (min-width: 481px) {
+                    font-size: 2rem;
+                }
             }
 
             .last-week-text {
                 font-size: .85rem;
+                @media only screen and (min-width: 481px) {
+                    margin-top: .5rem;
+                    font-size: .75rem;
+                }
             }
         }
     }

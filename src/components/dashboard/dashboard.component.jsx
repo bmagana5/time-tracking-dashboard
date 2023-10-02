@@ -123,14 +123,16 @@ const Dashboard = () => {
                 data &&
                 <TitleCard name={user.name} profileImg={data.profileImg} />
             }
-            {
-                data && currentData && 
-                titles.map(title => <Card key={title} 
-                    title={title} 
-                    data={currentData.data[title]} 
-                    prevData={prevData.data[title]}
-                    timeOption={timeOption}/>)
-            }
+            <div className="card-list-container">
+                {
+                    data && currentData && 
+                    titles.map(title => <Card key={title} 
+                        title={title} 
+                        data={currentData.data[title]} 
+                        prevData={prevData.data[title]}
+                        timeOption={timeOption}/>)
+                }
+            </div>
         </div>
     );
 };

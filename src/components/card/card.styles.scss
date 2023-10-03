@@ -4,13 +4,14 @@
     justify-content: flex-end;
     align-items: center;
     width: 100%;
+    max-width: 375px;
     min-height: auto;
     margin: 1rem 0;
     padding-top: 2.5rem;
     border-radius: 1rem;
     color: var(--pale-blue);
 
-    @media only screen and (min-width: 481px) {
+    @media only screen and (min-width: 768px) {
         width: 30%;
         height: 48%;
         margin: 0;
@@ -69,7 +70,7 @@
         border-radius: 1rem;
         cursor: pointer;
 
-        @media only screen and (min-width: 481px) {
+        @media only screen and (min-width: 768px) {
             justify-content: flex-start;
         }
 
@@ -87,7 +88,7 @@
             .type-text {
                 font-size: 1.2rem;
                 font-weight: 500;
-                @media only screen and (min-width: 481px) {
+                @media only screen and (min-width: 768px) {
                     font-size: .85rem;
                 }
             }
@@ -107,7 +108,7 @@
             justify-content: space-between;
             align-items: center;
             
-            @media only screen and (min-width: 481px) {
+            @media only screen and (min-width: 768px) {
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: center;
@@ -119,14 +120,14 @@
                 color: white;
                 font-size: 1.75rem;
                 font-weight: 300;
-                @media only screen and (min-width: 481px) {
+                @media only screen and (min-width: 768px) {
                     font-size: 2rem;
                 }
             }
 
             .last-week-text {
                 font-size: .85rem;
-                @media only screen and (min-width: 481px) {
+                @media only screen and (min-width: 768px) {
                     margin-top: .5rem;
                     font-size: .75rem;
                 }

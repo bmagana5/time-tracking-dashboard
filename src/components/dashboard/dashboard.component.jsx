@@ -39,6 +39,20 @@ const Dashboard = () => {
                 // console.log(data);
                 switch (timeOption) {
                     case 'daily':
+                        let days = data.months[0].weeks[0].days;
+                        // console.log(days);
+                        setCurrentData({
+                            type: timeOption,
+                            data: {
+                                ...days[6]
+                            }
+                        });
+                        setPrevData({
+                            type: timeOption,
+                            data: {
+                                ...days[5]
+                            }
+                        });
                         break;
                     case 'monthly':
                         let months = [];

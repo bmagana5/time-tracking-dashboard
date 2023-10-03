@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/time-tracking-dashboard/static/css/main.54803120.css",
+    "main.js": "/time-tracking-dashboard/static/js/main.d77c73cf.js",
+    "static/media/Rubik-VariableFont_wght.ttf": "/time-tracking-dashboard/static/media/Rubik-VariableFont_wght.3a4acc0356c6ea73f2c3.ttf",
+    "index.html": "/time-tracking-dashboard/index.html",
+    "static/media/icon-ellipsis.svg": "/time-tracking-dashboard/static/media/icon-ellipsis.a57a4ac863593bb69d31b4399823f745.svg",
+    "main.54803120.css.map": "/time-tracking-dashboard/static/css/main.54803120.css.map",
+    "main.d77c73cf.js.map": "/time-tracking-dashboard/static/js/main.d77c73cf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54803120.css",
+    "static/js/main.d77c73cf.js"
+  ]
+}
